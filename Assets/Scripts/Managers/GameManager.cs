@@ -57,6 +57,7 @@ public class GameManager : MonoBehaviour
         if (YandexGame.SDKEnabled)
         {
             _saveService.LoadPlayerProgress();
+            LoadGame();
         }
 
         Init();
@@ -73,8 +74,8 @@ public class GameManager : MonoBehaviour
         InitCharacters();
     }
 
-    private void OnEnable() => YandexGame.GetDataEvent += _saveService.LoadPlayerProgress;
-    private void OnDisable() => YandexGame.GetDataEvent -= _saveService.LoadPlayerProgress;
+    private void OnEnable() => LoadGame(); /*YandexGame.GetDataEvent += _saveService.LoadPlayerProgress;*/
+    private void OnDisable() => Save();/*YandexGame.GetDataEvent -= _saveService.LoadPlayerProgress*/
 
     private void InitBackgrounds()
     {

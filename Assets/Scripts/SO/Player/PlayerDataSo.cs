@@ -3,20 +3,13 @@ using UnityEngine;
 [CreateAssetMenu(menuName ="PlayerData/New Data")]
 public class PlayerDataSo : ScriptableObject
 {
-    public int MoneyCount
-    {
-        get;
-        set;
-    }
+    public int MoneyCount {get; set;}
+        
+    public float MusicVolume { get; set;}
+    public int PlayerExp { get; set;}
 
-    public int PlayerExp
-    {
-        get;
-        set;
-    }
-
-    public string _characters;
-    public string _saved_bgs;
+    public string _characters { get; set; }
+    public string _saved_bgs { get; set; }
 
     public int _money_per_click;
     public int _money_per_sec;

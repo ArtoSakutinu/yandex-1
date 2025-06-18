@@ -1,18 +1,18 @@
 {
-    "idSave": 2,
+    "idSave": 16,
     "isFirstSession": true,
     "language": "ru",
     "promptDone": false,
-    "MoneyCount": 0,
+    "MoneyCount": 591,
     "PlayerExp": 0,
-    "characters": "",
-    "saved_bgs": "",
+    "characters": "0;1;2;3;",
+    "saved_bgs": "0;1;2;3;4;",
     "money_per_click": 1,
     "money_per_sec": 1,
     "passive_cost": 75,
     "per_click_cost": 50,
-    "character_cost": 75,
-    "bg_cost": 50,
-    "charEq": 0,
-    "backgroundEq": 0
+    "character_cost": 6845,
+    "bg_cost": 1958,
+    "charEq": 3,
+    "backgroundEq": 4
 }
