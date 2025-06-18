@@ -150,6 +150,7 @@ public class GameManager : MonoBehaviour
         _characterManager.LoadCharacter();
         _backgroundImage.sprite = _backgroundItems.Find(x => x._id == 0)._texture;
 
+        ResetProgress();
         YandexGame.savesData = new SavesYG(); // заменяем на новый пустой объект
         YandexGame.SaveProgress(); // сохраняем чистый прогресс
         SceneManager.LoadScene(0);
